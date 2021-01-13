@@ -1,0 +1,13 @@
+# action.yml
+name: 'Build resume'
+description: 'Build a json resume providing a theme package URL'
+inputs:
+  theme-package-url:
+    description: 'URL to download the theme package'
+    required: true
+    default: 'https://github.com/trucngn/jsonresume-theme-eloquent/releases/download/v4.2.0/jsonresume-theme-eloquent-4.2.0.tgz'
+runs:
+  using: 'docker'
+  image: 'trucngn/resume-builder'
+  args:
+    - ${{ inputs.theme-package-url }}

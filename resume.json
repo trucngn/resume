@@ -1,0 +1,218 @@
+{
+  "basics": {
+    "name": "Truc Nguyen",
+    "label": "DevOps Engineer",
+    "picture": "me.jpg",
+    "email": "truc.ngn@gmail.com",
+    "summary": "I am a DevOps Engineer with an eye for automation since Day 1 of my career. Versatile team player with a deep commitment to a reliable and successful business. Eager to learn every day at a high pace.\n\nBased in Grenoble in the French Alps, I am keen on working remotely too.",
+    "location": {
+      "city": "Grenoble",
+      "countryCode": "France"
+    },
+    "profiles": [
+      {
+        "network": "Linkedin",
+        "username": "trucngn",
+        "url": "https://www.linkedin.com/in/trucngn/"
+      },
+      {
+        "network": "Github",
+        "username": "@tnguyen1",
+        "url": "https://github.com/tnguyen1"
+      },
+      {
+        "network": "Twitter",
+        "username": "trucngn",
+        "url": "https://twitter.com/trucngn/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Bonitasoft",
+      "location": "Grenoble",
+      "position": "Principal DevOps Engineer",
+      "website": "https://bonitasoft.com/",
+      "startDate": "2014-01-01",
+      "summary": "Bonitasoft is a leading open source provider of Business Process Management and low-code digital transformation software.",
+      "highlights": [
+        "Built from scratch a cloud native platform as a service to run process-based applications on a fully managed infrastructure",
+        "Monitoring and operating a Kubernetes multi-cluster and multi-tenant infrastructure with a 99.9% uptime SLA",
+        "Developed a continuous delivery solution for process-based application development and deployment",
+        "Set up CI/CD as code for development teams, making release pipelines faster and more sustainable",
+        "AWS, Docker, Kubernetes, Helm, Datadog, Prometheus, Python, Ansible, Terraform, Jenkins, Artifactory, Nexus, Shell, Git"
+      ]
+    },
+    {
+      "company": "Bonitasoft",
+      "location": "Grenoble",
+      "position": "QA Engineer",
+      "website": "https://bonitasoft.com/",
+      "startDate": "2012-08-01",
+      "endDate": "2014-01-01",
+      "summary": "Automated testing of a Business Process Management platform.",
+      "highlights": [
+        "Built a frontend automated test framework for multi-browser end-to-end testing",
+        "Wrote deployment tests against various database vendors and J2EE application servers to cover compatibility testing",
+        "Integrated automated tests to a Jenkins CI environment",
+        "Java, Maven, Selenium, TestNG, Jenkins, JIRA, Git, Agile"
+      ]
+    },
+    {
+      "company": "Moody's Analytics",
+      "location": "Grenoble",
+      "position": "QA Engineer",
+      "website": "https://www.moodysanalytics.com/",
+      "startDate": "2010-05-01",
+      "endDate": "2012-08-01",
+      "summary": "Moody's Analytics is an award-winning provider of risk and performance management software for financial institutions.",
+      "highlights": [
+        "Built a test framework for automated GUI tests of Adobe Flex applications",
+        "Automated deployment tests against J2EE application servers",
+        "Integrated automated tests to a Jenkins CI environment",
+        "Wrote automated tests for Oracle PL/SQL stored procedures",
+        "Python, XML, RIATest, Ant, Jenkins, Robot Framework, SQL, PL/SQL, Perforce, Agile"
+      ]
+    },
+    {
+      "company": "Yahoo! Inc.",
+      "location": "Grenoble",
+      "position": "QA Engineer",
+      "website": "https://answers.yahoo.com/",
+      "startDate": "2008-09-01",
+      "endDate": "2010-04-01",
+      "summary": "QA testing of Yahoo! Answers, the Q&A website from Yahoo!",
+      "highlights": [
+        "Developed automated tests to cover non-regression testing",
+        "Run performance tests to secure the website resilience to millions daily visits",
+        "Worked in an Agile/Scrum environment",
+        "Involved in QA engineer recruitment in London",
+        "Java, Maven, Selenium, JUnit, TestNG, XML, JSON, JMeter, Bugzilla, SVN, Agile"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "name": "Developers: work like a champion today",
+      "publisher": "Medium",
+      "releaseDate": "2019-05-19",
+      "website": "https://bonitasoft.medium.com/developers-work-like-a-champion-today-6279b3ed509d",
+      "summary": "How can we apply a champion’s mentality and work ethic to our day to day job?"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Global Knowledge",
+      "area": "Amazon Web Services",
+      "studyType": "Training",
+      "startDate": "2020-03-01",
+      "courses": [
+        "Architecting on AWS",
+        "Systems Operations on AWS"
+      ]
+    },
+    {
+      "institution": "Zenika",
+      "area": "DevOps",
+      "studyType": "Training",
+      "startDate": "2019-03-01",
+      "courses": [
+        "Kubernetes Application Developer"
+      ]
+    },
+    {
+      "institution": "ENSEIRB (French Engineering School) - Bordeaux",
+      "area": "Telecommunications",
+      "studyType": "Engineer's Degree",
+      "startDate": "2003-09-01",
+      "endDate": "2006-09-01",
+      "courses": [
+        "Software Engineering",
+        "Network and Telecommunication"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Cloud Native",
+      "keywords": [
+        "Amazon Web Services",
+        "Docker",
+        "Kubernetes",
+        "Helm"
+      ]
+    },
+    {
+      "name": "Continuous Integration/Delivery",
+      "keywords": [
+        "Jenkins",
+        "GitHub",
+        "Artifactory",
+        "Nexus"
+      ]
+    },
+    {
+      "name": "Infrastructure Provisioning",
+      "keywords": [
+        "Ansible",
+        "Terraform"
+      ]
+    },
+    {
+      "name": "Monitoring",
+      "keywords": [
+        "Datadog",
+        "Prometheus",
+        "Zabbix"
+      ]
+    },
+    {
+      "name": "Scripting and Coding",
+      "keywords": [
+        "Python",
+        "Bash",
+        "Shell",
+        "Git",
+        "YAML",
+        "Java",
+        "Maven"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "French",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Sports",
+      "keywords": [
+        "Taekwon-Do",
+        "Tennis",
+        "Trail running",
+        "Basketball",
+        "Boxing",
+        "Coaching"
+      ]
+    },
+    {
+      "name": "Traveling",
+      "keywords": [
+        "USA",
+        "China",
+        "Korea",
+        "Vietnam",
+        "Bulgaria",
+        "England",
+        "Italy"
+      ]
+    }
+  ]
+
+}
