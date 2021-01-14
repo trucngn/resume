@@ -8,6 +8,6 @@ inputs:
     default: 'https://github.com/trucngn/jsonresume-theme-eloquent/releases/download/v4.2.0/jsonresume-theme-eloquent-4.2.0.tgz'
 runs:
   using: 'docker'
-  image: 'trucngn/resume-builder'
+  image: 'docker.pkg.github.com/trucngn/resume/resume-builder:docker'
   args:
     - ${{ inputs.theme-package-url }}
