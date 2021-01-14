@@ -1,5 +1,9 @@
-#!/bin/sh -l
+#!/bin/bash -l
 
+set -euo pipefail
+
+WORKDIR=${WORKDIR:-/github/workspace}
+cd ${WORKDIR}
 
 # retrieve and install jsonresume theme
 wget "$1" -O /theme.tgz
