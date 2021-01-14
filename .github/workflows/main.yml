@@ -1,12 +1,13 @@
 on: [push]
 
+name: Build theme
+
 jobs:
   build-resume:
     runs-on: ubuntu-latest
     name: Build a jsonresume to HTML and PDF
     steps:
-
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v2
 
       - name: Build resume
