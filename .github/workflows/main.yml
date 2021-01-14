@@ -22,3 +22,37 @@ jobs:
           path: |
             resume.html
             resume.pdf
+
+      - name: Create release
+        if: ${{ contains(github.ref, 'refs/tags/') }}
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+
+      - name: Upload release HTML
+        if: ${{ contains(github.ref, 'refs/tags/') }}
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./resume.html
+          asset_name: resume.html
+          asset_content_type: text/html
+
+      - name: Upload release PDF
+        if: ${{ contains(github.ref, 'refs/tags/') }}
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./resume.pdf
+          asset_name: resume.pdf
+          asset_content_type: application/pdf
