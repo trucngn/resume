@@ -15,5 +15,5 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: trucngn/resume-builder
+          repository: trucngn/resume/resume-builder
           tag_with_ref: true
