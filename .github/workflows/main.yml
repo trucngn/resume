@@ -59,6 +59,7 @@ jobs:
           asset_content_type: application/pdf
 
       - name: Prepare public directory
+        if: ${{ contains(github.ref, 'refs/tags/') }}
         run: |
           mkdir public
           cp resume.pdf public/truc-nguyen-resume.pdf
@@ -66,7 +67,7 @@ jobs:
           sed -i "s/{{deployment_date}}/$(date -Iseconds)/g" public/index.html
 
       - name: Deploy to GitHub Pages
-        if: success()
+        if: ${{ contains(github.ref, 'refs/tags/') }}
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
