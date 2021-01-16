@@ -2,9 +2,9 @@
   "basics": {
     "name": "Truc Nguyen",
     "label": "DevOps Engineer",
-    "picture": "https://raw.githubusercontent.com/trucngn/resume/main/me.jpg",
+    "picture": "https://media-exp1.licdn.com/dms/image/C4D03AQFnrDoeUugtWA/profile-displayphoto-shrink_200_200/0/1610282281696?e=1616025600&v=beta&t=Yl6JSjUAzrb8tGVUH67Le3FtYYpaxOccPURQuzHGijc",
     "email": "truc.ngn@gmail.com",
-    "summary": "I am a DevOps Engineer with an eye for automation since Day 1 of my career. Versatile team player with a deep commitment to a reliable and successful business. Eager to learn every day at a high pace.\n\nBased in Grenoble in the French Alps, I am keen on working remotely too.",
+    "summary": "I am a DevOps Engineer with an eye for automation since day one. Versatile team player with a deep commitment to a reliable and successful business, I am eager to learn every day at a high pace.\n\nBased in Grenoble in the French Alps, I am keen on working remotely too.\n\n_By the way, this resume has been automatically built and deployed on {{deployment_date}} with a GitHub Actions CI/CD workflow. Check **[the workflow](https://github.com/trucngn/resume/blob/main/.github/workflows/main.yml)** on GitHub if interested._",
     "location": {
       "city": "Grenoble",
       "countryCode": "France"
@@ -40,7 +40,7 @@
         "Monitoring and operating a Kubernetes multi-cluster and multi-tenant infrastructure with a 99.9% uptime SLA",
         "Developed a continuous delivery solution for process-based application development and deployment",
         "Set up CI/CD as code for development teams, making release pipelines faster and more sustainable",
-        "AWS, Docker, Kubernetes, Helm, Datadog, Prometheus, Python, Ansible, Terraform, Jenkins, Artifactory, Nexus, Shell, Git"
+        "*AWS, Docker, Kubernetes, Helm, Datadog, Prometheus, Python, Ansible, Terraform, Jenkins, Artifactory, Nexus, Shell, Git, Agile*"
       ]
     },
     {
@@ -55,7 +55,7 @@
         "Built a frontend automated test framework for multi-browser end-to-end testing",
         "Wrote deployment tests against various database vendors and J2EE application servers to cover compatibility testing",
         "Integrated automated tests to a Jenkins CI environment",
-        "Java, Maven, Selenium, TestNG, Jenkins, JIRA, Git, Agile"
+        "*Java, Maven, Selenium, TestNG, Jenkins, JIRA, Git, Agile*"
       ]
     },
     {
@@ -71,7 +71,7 @@
         "Automated deployment tests against J2EE application servers",
         "Integrated automated tests to a Jenkins CI environment",
         "Wrote automated tests for Oracle PL/SQL stored procedures",
-        "Python, XML, RIATest, Ant, Jenkins, Robot Framework, SQL, PL/SQL, Perforce, Agile"
+        "*Python, XML, RIATest, Ant, Jenkins, Robot Framework, SQL, PL/SQL, Perforce, Agile*"
       ]
     },
     {
@@ -85,9 +85,8 @@
       "highlights": [
         "Developed automated tests to cover non-regression testing",
         "Run performance tests to secure the website resilience to millions daily visits",
-        "Worked in an Agile/Scrum environment",
         "Involved in QA engineer recruitment in London",
-        "Java, Maven, Selenium, JUnit, TestNG, XML, JSON, JMeter, Bugzilla, SVN, Agile"
+        "*Java, Maven, Selenium, JUnit, TestNG, XML, JSON, JMeter, Bugzilla, SVN, Agile*"
       ]
     }
   ],
@@ -95,7 +94,7 @@
     {
       "name": "Developers: work like a champion today",
       "publisher": "Medium",
-      "releaseDate": "2019-05-19",
+      "releaseDate": "2019-05-31",
       "website": "https://bonitasoft.medium.com/developers-work-like-a-champion-today-6279b3ed509d",
       "summary": "How can we apply a champion’s mentality and work ethic to our day to day job?"
     }
@@ -143,12 +142,11 @@
       ]
     },
     {
-      "name": "Continuous Integration/Delivery",
+      "name": "Monitoring",
       "keywords": [
-        "Jenkins",
-        "GitHub",
-        "Artifactory",
-        "Nexus"
+        "Datadog",
+        "Prometheus",
+        "Zabbix"
       ]
     },
     {
@@ -159,11 +157,12 @@
       ]
     },
     {
-      "name": "Monitoring",
+      "name": "Continuous Integration/Delivery",
       "keywords": [
-        "Datadog",
-        "Prometheus",
-        "Zabbix"
+        "Jenkins",
+        "GitHub",
+        "Artifactory",
+        "Nexus"
       ]
     },
     {
@@ -176,6 +175,14 @@
         "YAML",
         "Java",
         "Maven"
+      ]
+    },
+    {
+      "name": "Tools",
+      "keywords": [
+        "Vim",
+        "Sublime Text",
+        "Terminator"
       ]
     }
   ],
@@ -191,26 +198,23 @@
   ],
   "interests": [
     {
-      "name": "Sports",
+      "name": "Taekwon-Do",
+      "summary": "Practicing and teaching this martial art for many years, I also competed on the world stage with some notable success.",
       "keywords": [
-        "Taekwon-Do",
-        "Tennis",
-        "Trail running",
-        "Basketball",
-        "Boxing",
-        "Coaching"
+        "Work ethic",
+        "Perseverance",
+        "Mentoring",
+        "Focus"
       ]
     },
     {
       "name": "Traveling",
+      "summary": "My favorite way to experience new cultures. Making and planning annual trips to different countries is a challenge I like to embrace.",
       "keywords": [
-        "USA",
-        "China",
-        "Korea",
-        "Vietnam",
-        "Bulgaria",
-        "England",
-        "Italy"
+        "Curiosity",
+        "Organization",
+        "Diversity",
+        "Adaptability"
       ]
     }
   ]
