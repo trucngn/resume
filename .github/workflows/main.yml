@@ -1,6 +1,6 @@
 on: [push]
 
-name: Build theme
+name: Build resume
 
 jobs:
   build-resume:
