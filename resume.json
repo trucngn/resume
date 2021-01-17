@@ -2,7 +2,7 @@
   "basics": {
     "name": "Truc Nguyen",
     "label": "DevOps Engineer",
-    "picture": "https://media-exp1.licdn.com/dms/image/C4D03AQFnrDoeUugtWA/profile-displayphoto-shrink_200_200/0/1610282281696?e=1616025600&v=beta&t=Yl6JSjUAzrb8tGVUH67Le3FtYYpaxOccPURQuzHGijc",
+    "picture": "https://github.com/trucngn/resume/raw/main/me.jpg",
     "email": "truc.ngn@gmail.com",
     "summary": "I am a DevOps Engineer with an eye for automation since day one. Versatile team player with a deep commitment to a reliable and successful business, I am eager to learn every day at a high pace.\n\nBased in Grenoble in the French Alps, I am keen on working remotely too.\n\n_By the way, this resume has been automatically built and deployed on {{deployment_date}} with a GitHub Actions CI/CD workflow. Check **[the workflow](https://github.com/trucngn/resume/blob/main/.github/workflows/main.yml)** on GitHub if interested._",
     "location": {
