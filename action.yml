@@ -5,7 +5,7 @@ inputs:
   theme-package-url:
     description: 'URL to download the theme package'
     required: true
-    default: 'https://github.com/trucngn/jsonresume-theme-eloquent/releases/download/v4.2.0/jsonresume-theme-eloquent-4.2.0.tgz'
+    default: 'https://github.com/trucngn/jsonresume-theme-helloquan/releases/download/v4.4.0/jsonresume-theme-helloquan-4.4.0.tgz'
 runs:
   using: 'docker'
   image: 'ghcr.io/trucngn/resume/resume-builder:latest'
