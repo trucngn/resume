@@ -36,11 +36,12 @@
       "startDate": "2014-01-01",
       "summary": "Bonitasoft is a leading open source provider of Business Process Management and low-code digital transformation software.",
       "highlights": [
-        "Built from scratch a cloud native platform as a service to run process-based applications on a fully managed infrastructure",
-        "Monitoring and operating a Kubernetes multi-cluster and multi-tenant infrastructure with a 99.9% uptime SLA",
+        "Built from scratch a cloud native PaaS to run process-based applications on a fully managed and cost-optimized infrastructure",
+        "Set up observability and operate a Kubernetes multi-cluster and multi-tenant infrastructure with a 99.9% uptime SLA",
         "Developed a continuous delivery solution for process-based application development and deployment",
         "Set up CI/CD as code for development teams, making release pipelines faster and more sustainable",
-        "*AWS, Docker, Kubernetes, Helm, Datadog, Prometheus, Python, Ansible, Terraform, Jenkins, Artifactory, Nexus, Shell, Git, Agile*"
+        "Managed IT infrastructure as code to ensure reliability of corporate-wise services, both on-premises and on cloud IaaS",
+        "*AWS, Docker, Kubernetes, Helm, Mozilla SOPS, Datadog, Prometheus, Python, Ansible, Terraform, Jenkins, Artifactory, Nexus, Shell, Git, Agile*"
       ]
     },
     {
@@ -150,7 +151,7 @@
       ]
     },
     {
-      "name": "Infrastructure Provisioning",
+      "name": "Infrastructure as Code",
       "keywords": [
         "Ansible",
         "Terraform"
@@ -182,7 +183,8 @@
       "keywords": [
         "Vim",
         "Sublime Text",
-        "Terminator"
+        "Terminator",
+        "Mozilla SOPS"
       ]
     }
   ],
@@ -199,22 +201,24 @@
   "interests": [
     {
       "name": "Taekwon-Do",
-      "summary": "Practicing and teaching this martial art for many years, I also competed on the world stage with some notable success.",
+      "summary": "Practicing and teaching this martial art for many years, I also competed on the world stage with some notable success:  \n&#8226;&nbsp; 3-times European gold medalist (2015, 2017, 2019)  \n&#8226;&nbsp; 2-times World bronze medalist (2015, 2019)  \n&#8226;&nbsp; French team leader since 2011",
       "keywords": [
         "Work ethic",
         "Perseverance",
         "Mentoring",
-        "Focus"
+        "Focus",
+        "Leadership"
       ]
     },
     {
       "name": "Traveling",
-      "summary": "My favorite way to experience new cultures. Making and planning annual trips to different countries is a challenge I like to embrace.",
+      "summary": "My favorite way to experience new cultures. Making and planning annual trips to different countries is a challenge I like to embrace. Some places I have traveled to: the USA, Vietnam, China, Bulgaria, Korea.",
       "keywords": [
         "Curiosity",
         "Organization",
         "Diversity",
-        "Adaptability"
+        "Adaptability",
+        "Awareness"
       ]
     }
   ]
