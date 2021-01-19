@@ -36,6 +36,11 @@ jobs:
           draft: false
           prerelease: false
 
+      - name: Get tag name
+        if: ${{ contains(github.ref, 'refs/tags/') }}
+        id: get_tag_name
+        run: echo "::set-output name=tagname::${GITHUB_REF/refs\/tags\//}"
+
       - name: Upload release HTML
         if: ${{ contains(github.ref, 'refs/tags/') }}
         uses: actions/upload-release-asset@v1
@@ -44,7 +49,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./resume.html
-          asset_name: resume.html
+          asset_name: truc-nguyen-resume-${{ steps.get_tag_name.outputs.tagname }}.html
           asset_content_type: text/html
 
       - name: Upload release PDF
@@ -55,7 +60,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./resume.pdf
-          asset_name: resume.pdf
+          asset_name: truc-nguyen-resume-${{ steps.get_tag_name.outputs.tagname }}.pdf
           asset_content_type: application/pdf
 
       - name: Prepare public directory
