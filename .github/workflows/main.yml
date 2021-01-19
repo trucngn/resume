@@ -3,9 +3,10 @@ on: [push]
 name: Build resume
 
 jobs:
+
   build-resume:
-    runs-on: ubuntu-latest
-    name: Build a jsonresume to HTML and PDF
+    runs-on: ubuntu-20.04
+    name: Build resume artifacts
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -16,7 +17,7 @@ jobs:
         with:
           theme-package-url: 'https://github.com/trucngn/jsonresume-theme-helloquan/releases/download/v4.4.0/jsonresume-theme-helloquan-4.4.0.tgz'
 
-      - name: Upload artifact
+      - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
           name: resume-artifacts
@@ -24,8 +25,18 @@ jobs:
             resume.html
             resume.pdf
 
+  release-resume:
+    if: ${{ contains(github.ref, 'refs/tags/') }}
+    needs: build-resume
+    runs-on: ubuntu-20.04
+    name: Release and publish resume
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: resume-artifacts
+
       - name: Create release
-        if: ${{ contains(github.ref, 'refs/tags/') }}
         id: create_release
         uses: actions/create-release@v1
         env:
@@ -36,43 +47,37 @@ jobs:
           draft: false
           prerelease: false
 
-      - name: Get tag name
-        if: ${{ contains(github.ref, 'refs/tags/') }}
-        id: get_tag_name
-        run: echo "::set-output name=tagname::${GITHUB_REF/refs\/tags\//}"
+      - name: Get artifact name
+        id: get_artifact_name
+        run: echo "::set-output name=artifact_name::truc-nguyen-resume-${GITHUB_REF/refs\/tags\//}"
 
       - name: Upload release HTML
-        if: ${{ contains(github.ref, 'refs/tags/') }}
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./resume.html
-          asset_name: truc-nguyen-resume-${{ steps.get_tag_name.outputs.tagname }}.html
+          asset_name: ${{ steps.get_artifact_name.outputs.artifact_name }}.html
           asset_content_type: text/html
 
       - name: Upload release PDF
-        if: ${{ contains(github.ref, 'refs/tags/') }}
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./resume.pdf
-          asset_name: truc-nguyen-resume-${{ steps.get_tag_name.outputs.tagname }}.pdf
+          asset_name: ${{ steps.get_artifact_name.outputs.artifact_name }}.pdf
           asset_content_type: application/pdf
 
       - name: Prepare public directory
-        if: ${{ contains(github.ref, 'refs/tags/') }}
         run: |
           mkdir public
-          cp resume.pdf public/truc-nguyen-resume.pdf
           cp resume.html public/index.html
           sed -i "s/{{deployment_date}}/$(date -Iseconds)/g" public/index.html
 
       - name: Deploy to GitHub Pages
-        if: ${{ contains(github.ref, 'refs/tags/') }}
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
