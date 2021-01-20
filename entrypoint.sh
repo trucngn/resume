@@ -14,4 +14,4 @@ package_name=$(npm pack /theme.tgz --dry-run 2>&1 | grep "^npm notice name:" | s
 resume export -t ./node_modules/$package_name resume.html
 
 # generate PDF
-wkhtmltopdf -s A4 -B 10 -L 10 -R 10 -T 10 --no-background --javascript-delay 3000 resume.html resume.pdf
+resume export -t ./node_modules/$package_name resume.pdf
