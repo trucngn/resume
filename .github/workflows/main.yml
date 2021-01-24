@@ -75,7 +75,6 @@ jobs:
         run: |
           mkdir public
           cp resume.html public/index.html
-          sed -i "s/{{deployment_date}}/$(date -Iseconds)/g" public/index.html
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
