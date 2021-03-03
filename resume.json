@@ -43,13 +43,14 @@
         "Developed a **continuous delivery** solution for process-based application development and deployment",
         "Set up **CI/CD as code** for development teams, making release pipelines faster and more sustainable",
         "Managed IT **infrastructure as code** to ensure reliability of corporate-wise services, both on-premises and on cloud IaaS",
+        "Developed a command-line toolkit to manage Salesforce Metadata in sandbox and production environments through Git",
         "*AWS, Docker, Kubernetes, Helm, Mozilla SOPS, Datadog, Prometheus, Python, Ansible, Terraform, Jenkins, Artifactory, Nexus, Shell, Git, Agile*"
       ]
     },
     {
       "company": "Bonitasoft",
       "location": "Grenoble",
-      "position": "QA Engineer",
+      "position": "Senior QA Engineer",
       "website": "https://bonitasoft.com/",
       "startDate": "2012-08-01",
       "endDate": "2014-01-01",
