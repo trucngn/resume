@@ -31,11 +31,25 @@
   },
   "work": [
     {
+      "company": "Salesforce",
+      "location": "Grenoble",
+      "position": "Senior DevOps Engineer",
+      "website": "https://www.salesforce.com/",
+      "startDate": "2021-07-01",
+      "summary": "Facilitating releases through DevOps and Testing activities at Salesforce.",
+      "highlights": [
+        "Build and maintenance of a Continuous Delivery Pipeline toolchain",
+        "Planning, execution and follow-up of 2GP packages deployments",
+        "Shift-left performance testing with automated environment setup and test run"
+      ]
+    },
+    {
       "company": "Bonitasoft",
       "location": "Grenoble",
       "position": "Principal DevOps Engineer",
       "website": "https://bonitasoft.com/",
       "startDate": "2014-01-01",
+      "endDate": "2021-07-01",
       "summary": "Bonitasoft is a leading open source provider of Business Process Management and low-code digital transformation software.",
       "highlights": [
         "Built from scratch a **cloud native** PaaS to run process-based applications on a fully managed and cost-optimized infrastructure",
