@@ -40,7 +40,9 @@
       "highlights": [
         "Build and maintenance of a Continuous Delivery Pipeline toolchain",
         "Planning, execution and follow-up of 2GP packages deployments",
-        "Shift-left performance testing with automated environment setup and test run"
+        "Shift-left performance testing with automated environment setup and test run",
+        "End-to-end test automation",
+        "*CircleCI, Jenkins, GitHub Actions, Selenium, Python, Java, Git, Agile*"
       ]
     },
     {
